@@ -55,9 +55,9 @@ class balabol:
             temp = []
             temp.append(round(len(total2) / 2))
             temp.append(round((len(total2) / 2) + 1))
-            total = ((total2[temp[0]] + total2[temp[1]]) / 2) - minimal_r
+            total = ((total2[temp[0]] + total2[temp[1]]) / 2)
         else:
-            total = total2[round((len(total2) + 1) / 2) - minimal_r]
+            total = total2[round((len(total2) + 1) / 2)]
         i = (secrets.randbelow(len(customdata) - 1) + tokenize) % len(customdata) - 2
         for word in customdata[i:]:
             for i in word:
