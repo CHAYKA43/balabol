@@ -20,7 +20,7 @@ class balabol:
             base = str(base)
             if base not in self.data:
                     self.data.append(base)
-    def generate(self, message="", tokenize=10, minimal_r=10, max_rai_input=20, minimal_rai_input=10, noremember=False, morelearn=False, raitingchars="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|;:,.<>?/~` \"\"\\/", custom_data=None, usefilter=True, filtermemory=290):
+    def generate(self, message="", tokenize=10, minimal_r=10, max_rai_input=20, minimal_rai_input=10, noremember=False, morelearn=False, raitingchars="АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюяABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-=[]{}|;:,.<>?/~` \"\"\\/", custom_data=None, usefilter=True, filtermemory=20):
         most_common_text = ""
         if usefilter:
             if len(self.filter) > 0:
