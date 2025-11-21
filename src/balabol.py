@@ -51,7 +51,7 @@ class balabol:
         result = []
         tabel_for_regeneration = []
         total2 = sorted(total2)
-        if len(total2) > 0:
+        if len(total2) > 10:
             if len(total2) % 2 == 0:
                 temp = []
                 temp.append(round(len(total2) / 2))
