@@ -51,13 +51,14 @@ class balabol:
         result = []
         tabel_for_regeneration = []
         total2 = sorted(total2)
-        if len(total2) % 2 == 0:
-            temp = []
-            temp.append(round(len(total2) / 2))
-            temp.append(round((len(total2) / 2) + 1))
-            total = ((total2[temp[0]] + total2[temp[1]]) / 2)
-        else:
-            total = total2[round((len(total2) + 1) / 2)]
+        if len(total2) > 0:
+            if len(total2) % 2 == 0:
+                temp = []
+                temp.append(round(len(total2) / 2))
+                temp.append(round((len(total2) / 2) + 1))
+                total = ((total2[temp[0]] + total2[temp[1]]) / 2)
+            else:
+                total = total2[round((len(total2) + 1) / 2)]
         i = (secrets.randbelow(len(customdata) - 1) + tokenize) % len(customdata) - 2
         for word in customdata[i:]:
             for i in word:
